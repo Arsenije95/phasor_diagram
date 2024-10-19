@@ -1,8 +1,11 @@
+import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:alchemist/alchemist.dart';
 
 import 'package:phasor_diagram/phasor_diagram.dart';
 
 void main() {
+  /// Widget testing
   testWidgets('Checking if PhasorDiagram gets rendered', (tester) async {
     await tester.pumpWidget(const PhasorDiagram(
       size: 100.0,
@@ -70,5 +73,38 @@ void main() {
     final phasorDiagramWidget = find.byType(PhasorDiagram);
 
     expect(phasorDiagramWidget, findsOneWidget);
+  });
+
+  /// Golden testing
+  group('PhasorDiagram Golden Tests', () {
+    goldenTest(
+      'renders correctly',
+      fileName: 'phasor_diagram',
+      builder: () => GoldenTestGroup(
+        scenarioConstraints: const BoxConstraints(
+          maxWidth: 600.0,
+        ),
+        children: [
+          GoldenTestScenario(
+            name: 'The most common values',
+            child: const PhasorDiagram(
+              size: 200.0,
+              phaseOneVoltageValue: 220.0,
+              phaseOneVoltageAngle: 0.0,
+              phaseTwoVoltageValue: 220.0,
+              phaseTwoVoltageAngle: 120.0,
+              phaseThreeVoltageValue: 220.0,
+              phaseThreeVoltageAngle: 240.0,
+              phaseOneCurrentValue: 1.1,
+              phaseOneCurrentAngle: 15.0,
+              phaseTwoCurrentValue: 1.1,
+              phaseTwoCurrentAngle: 135.0,
+              phaseThreeCurrentValue: 1.1,
+              phaseThreeCurrentAngle: 255.0,
+            ),
+          ),
+        ],
+      ),
+    );
   });
 }
