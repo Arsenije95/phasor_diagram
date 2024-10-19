@@ -129,83 +129,99 @@ class PhasorDiagramPainter extends CustomPainter {
       maxRadius: radius,
     );
 
-    /// Drawing phase 1 voltage vector
-    drawVector(
-      canvas: canvas,
-      startPosition: center,
-      maxRadius: radius,
-      name: 'U\u2081',
-      value: voltageValues[0],
-      angle: phaseOneVoltageAngle,
-      isVoltage: true,
-      voltageLengthFactor: voltageValues[0] / voltageMaxValue,
-      currentLengthFactor: currentValues[0] / currentMaxValue,
-    );
+    if(voltageMaxValue != 0.0) {
+      if(voltageValues[0] != 0.0) {
+        /// Drawing phase 1 voltage vector
+        drawVector(
+          canvas: canvas,
+          startPosition: center,
+          maxRadius: radius,
+          name: 'U\u2081',
+          value: voltageValues[0],
+          angle: phaseOneVoltageAngle,
+          isVoltage: true,
+          voltageLengthFactor: voltageValues[0] / voltageMaxValue,
+          currentLengthFactor: currentValues[0] / currentMaxValue,
+        );
+      }
 
-    /// Drawing phase 2 voltage vector
-    drawVector(
-      canvas: canvas,
-      startPosition: center,
-      maxRadius: radius,
-      name: 'U\u2082',
-      value: voltageValues[1],
-      angle: phaseTwoVoltageAngle,
-      isVoltage: true,
-      voltageLengthFactor: voltageValues[1] / voltageMaxValue,
-      currentLengthFactor: currentValues[1] / currentMaxValue,
-    );
+      if(voltageValues[1] != 0.0) {
+        /// Drawing phase 2 voltage vector
+        drawVector(
+          canvas: canvas,
+          startPosition: center,
+          maxRadius: radius,
+          name: 'U\u2082',
+          value: voltageValues[1],
+          angle: phaseTwoVoltageAngle,
+          isVoltage: true,
+          voltageLengthFactor: voltageValues[1] / voltageMaxValue,
+          currentLengthFactor: currentValues[1] / currentMaxValue,
+        );
+      }
 
-    /// Drawing phase 3 voltage vector
-    drawVector(
-      canvas: canvas,
-      startPosition: center,
-      maxRadius: radius,
-      name: 'U\u2083',
-      value: voltageValues[2],
-      angle: phaseThreeVoltageAngle,
-      isVoltage: true,
-      voltageLengthFactor: voltageValues[2] / voltageMaxValue,
-      currentLengthFactor: currentValues[2] / currentMaxValue,
-    );
+      if(voltageValues[2] != 0.0) {
+        /// Drawing phase 3 voltage vector
+        drawVector(
+          canvas: canvas,
+          startPosition: center,
+          maxRadius: radius,
+          name: 'U\u2083',
+          value: voltageValues[2],
+          angle: phaseThreeVoltageAngle,
+          isVoltage: true,
+          voltageLengthFactor: voltageValues[2] / voltageMaxValue,
+          currentLengthFactor: currentValues[2] / currentMaxValue,
+        );
+      }
+    }
 
-    /// Drawing phase 1 current vector
-    drawVector(
-      canvas: canvas,
-      startPosition: center,
-      maxRadius: radius,
-      name: 'I\u2081',
-      value: currentValues[0],
-      angle: phaseOneCurrentAngle,
-      isVoltage: false,
-      voltageLengthFactor: voltageValues[0] / voltageMaxValue,
-      currentLengthFactor: currentValues[0] / currentMaxValue,
-    );
+    if(currentMaxValue != 0.0) {
+      if(currentValues[0] != 0.0) {
+        /// Drawing phase 1 current vector
+        drawVector(
+          canvas: canvas,
+          startPosition: center,
+          maxRadius: radius,
+          name: 'I\u2081',
+          value: currentValues[0],
+          angle: phaseOneCurrentAngle,
+          isVoltage: false,
+          voltageLengthFactor: voltageValues[0] / voltageMaxValue,
+          currentLengthFactor: currentValues[0] / currentMaxValue,
+        );
+      }
 
-    /// Drawing phase 2 current vector
-    drawVector(
-      canvas: canvas,
-      startPosition: center,
-      maxRadius: radius,
-      name: 'I\u2082',
-      value: currentValues[1],
-      angle: phaseTwoCurrentAngle,
-      isVoltage: false,
-      voltageLengthFactor: voltageValues[1] / voltageMaxValue,
-      currentLengthFactor: currentValues[1] / currentMaxValue,
-    );
+      if(currentValues[1] != 0.0) {
+        /// Drawing phase 2 current vector
+        drawVector(
+          canvas: canvas,
+          startPosition: center,
+          maxRadius: radius,
+          name: 'I\u2082',
+          value: currentValues[1],
+          angle: phaseTwoCurrentAngle,
+          isVoltage: false,
+          voltageLengthFactor: voltageValues[1] / voltageMaxValue,
+          currentLengthFactor: currentValues[1] / currentMaxValue,
+        );
+      }
 
-    /// Drawing phase 3 current vector
-    drawVector(
-      canvas: canvas,
-      startPosition: center,
-      maxRadius: radius,
-      name: 'I\u2083',
-      value: currentValues[2],
-      angle: phaseThreeCurrentAngle,
-      isVoltage: false,
-      voltageLengthFactor: voltageValues[2] / voltageMaxValue,
-      currentLengthFactor: currentValues[2] / currentMaxValue,
-    );
+      if(currentValues[2] != 0.0) {
+        /// Drawing phase 3 current vector
+        drawVector(
+          canvas: canvas,
+          startPosition: center,
+          maxRadius: radius,
+          name: 'I\u2083',
+          value: currentValues[2],
+          angle: phaseThreeCurrentAngle,
+          isVoltage: false,
+          voltageLengthFactor: voltageValues[2] / voltageMaxValue,
+          currentLengthFactor: currentValues[2] / currentMaxValue,
+        );
+      }
+    }
   }
 
   @override

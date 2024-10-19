@@ -104,7 +104,7 @@ void drawVector({
     ..color = color
     ..strokeWidth = strokeWidth;
 
-  /// Calculating vector end position
+  /// Calculating vector's end position
   Offset vectorEndPosition({
     required double centerXAxis,
     required double centerYAxis,
