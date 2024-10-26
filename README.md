@@ -1,18 +1,10 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+Paints a phasor diagram for a three-phase electrical system.
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
-
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+* The Phasor Diagram is a visual representation of an electric system.
+* In this package, all values are represented as vectors.
+* The length of each vector indicates its intensity.
+* The direction of each vector, shown by an arrow at the end, represents the angle of the current or voltage.
+* Currents are represented in red, while voltages are represented in blue.
 
 ## Features
 
@@ -25,15 +17,74 @@ start using the package.
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
 ```dart
-const like = 'sample';
+import 'package:flutter/material.dart';
+
+import 'package:phasor_diagram/phasor_diagram.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Example',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
+        useMaterial3: true,
+      ),
+      home: const MyHomePage(),
+    );
+  }
+}
+
+class MyHomePage extends StatefulWidget {
+  const MyHomePage({super.key});
+
+  @override
+  State<MyHomePage> createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.blue,
+        centerTitle: true,
+        automaticallyImplyLeading: false,
+        title: const Text(
+          'Phasor diagram',
+          style: TextStyle(
+            color: Colors.white,
+            fontWeight: FontWeight.w600,
+          ),
+        ),
+      ),
+      body: Center(
+        child: PhasorDiagram(
+          size: MediaQuery.of(context).size.width * 0.8,
+          phaseOneVoltageValue: 220.0,
+          phaseOneVoltageAngle: 0.0,
+          phaseTwoVoltageValue: 220.0,
+          phaseTwoVoltageAngle: 120.0,
+          phaseThreeVoltageValue: 220.0,
+          phaseThreeVoltageAngle: 240.0,
+          phaseOneCurrentValue: 1.1,
+          phaseOneCurrentAngle: 15.0,
+          phaseTwoCurrentValue: 1.1,
+          phaseTwoCurrentAngle: 135.0,
+          phaseThreeCurrentValue: 1.1,
+          phaseThreeCurrentAngle: 255.0,
+        ),
+      ),
+    );
+  }
+}
+
 ```
-
-## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
