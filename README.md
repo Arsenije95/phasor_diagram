@@ -1,11 +1,11 @@
-**Paints a phasor diagram for a three-phase electrical system.**
+Paints a phasor diagram for a three-phase electrical system.
 
 The phasor diagram is a graphical representation used in electrical engineering to illustrate the 
 relationships between voltages and currents in a three-phase system. It consists of three voltage 
 vectors (represented as U) and three current vectors (represented as I) for each phase.
 
-In the Phasor Diagram, both current and voltage are represented as vectors. Each vector is depicted 
-as a line with an arrow at one end.
+In the **PhasorDiagram**, both current and voltage are represented as vectors. Each vector is 
+depicted as a line with an arrow at one end.
 
 * The length of the vector represents its intensity.
 * The angle of the vector indicates its direction relative to an imaginary x-axis.
