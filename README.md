@@ -18,7 +18,7 @@ Each vector is depicted as a line with an arrow at one end.
 
 ## Usage
 
-All properties are required. The size must be greater than or equal to 100.0, and the rest of the 
+All properties are required. The **size** must be greater than or equal to 100.0, and the rest of the 
 properties cannot have negative values.
 
 ```dart
