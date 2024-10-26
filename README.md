@@ -19,7 +19,7 @@ In this package, all values are represented as vectors.
 All the properties are required, size must be larger then or equal to 100.0, and the rest of them 
 can't have negative values.
 
-```
+```dart
 PhasorDiagram(
   size: 250.0,
   phaseOneVoltageValue: 220.0,
