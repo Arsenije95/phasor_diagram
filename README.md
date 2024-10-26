@@ -14,20 +14,14 @@ In this package, all values are represented as vectors.
    alt="Phasor diagram, image of the second example." height="400"/>
 </p>
 
-[//]: # (![Phasor diagram example 1]&#40;https://github.com/Arsenije95/phasor_diagram/blob/5ff5697dad4c6968a245d9a59c98cc070c248eb1/assets/example_1.jpg&#41;)
-
-[//]: # (![Phasor diagram example 1]&#40;https://github.com/Arsenije95/phasor_diagram/blob/5ff5697dad4c6968a245d9a59c98cc070c248eb1/assets/example_2.jpg&#41;)
-
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
 ## Usage
 
-```dart
+All the properties are required, size must be larger then or equal to 100.0, and the rest of them 
+can't have negative values.
+
+```
 PhasorDiagram(
-  size: MediaQuery.of(context).size.width * 0.8,
+  size: 250.0,
   phaseOneVoltageValue: 220.0,
   phaseOneVoltageAngle: 0.0,
   phaseTwoVoltageValue: 220.0,
