@@ -1,10 +1,12 @@
 Paints a phasor diagram for a three-phase electrical system.
 
-## Features
-In this package, all values are represented as vectors.
-* The length of each vector indicates its intensity.
-* The direction of each vector, shown by an arrow at the end, represents the angle of the current or voltage.
-* Currents are represented in red, while voltages are represented in blue.
+## Visual Representation
+In the Phasor Diagram, both current and voltage are represented as vectors. 
+Each vector is depicted as a line with an arrow at one end.
+
+* The length of the vector represents its intensity.
+* The angle of the vector indicates its direction relative to an imaginary x-axis.
+* Voltage vectors are represented in blue, while current vectors are represented in red.
 
 <p>
   <img src="https://github.com/Arsenije95/phasor_diagram/blob/5ff5697dad4c6968a245d9a59c98cc070c248eb1/assets/example_1.jpg"
@@ -16,8 +18,8 @@ In this package, all values are represented as vectors.
 
 ## Usage
 
-All the properties are required, size must be larger then or equal to 100.0, and the rest of them 
-can't have negative values.
+All properties are required. The size must be greater than or equal to 100.0, and the rest of the 
+properties cannot have negative values.
 
 ```dart
 PhasorDiagram(
