@@ -1,14 +1,13 @@
 Paints a phasor diagram for a three-phase electrical system.
 
-* The Phasor Diagram is a visual representation of an electric system.
-* In this package, all values are represented as vectors.
+## Features
+In this package, all values are represented as vectors.
 * The length of each vector indicates its intensity.
 * The direction of each vector, shown by an arrow at the end, represents the angle of the current or voltage.
 * Currents are represented in red, while voltages are represented in blue.
 
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+![Phasor diagram example 1](https://github.com/Arsenije95/phasor_diagram/blob/5ff5697dad4c6968a245d9a59c98cc070c248eb1/assets/example_1.jpg)
+![Phasor diagram example 1](https://github.com/Arsenije95/phasor_diagram/blob/5ff5697dad4c6968a245d9a59c98cc070c248eb1/assets/example_2.jpg)
 
 ## Getting started
 
