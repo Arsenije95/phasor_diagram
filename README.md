@@ -6,8 +6,17 @@ In this package, all values are represented as vectors.
 * The direction of each vector, shown by an arrow at the end, represents the angle of the current or voltage.
 * Currents are represented in red, while voltages are represented in blue.
 
-![Phasor diagram example 1](https://github.com/Arsenije95/phasor_diagram/blob/5ff5697dad4c6968a245d9a59c98cc070c248eb1/assets/example_1.jpg)
-![Phasor diagram example 1](https://github.com/Arsenije95/phasor_diagram/blob/5ff5697dad4c6968a245d9a59c98cc070c248eb1/assets/example_2.jpg)
+<p>
+  <img src="https://github.com/Arsenije95/phasor_diagram/blob/5ff5697dad4c6968a245d9a59c98cc070c248eb1/assets/example_1.jpg"
+    alt="An animated image of the iOS in-app purchase UI" height="400"/>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://github.com/Arsenije95/phasor_diagram/blob/5ff5697dad4c6968a245d9a59c98cc070c248eb1/assets/example_2.jpg"
+   alt="An animated image of the Android in-app purchase UI" height="400"/>
+</p>
+
+[//]: # (![Phasor diagram example 1]&#40;https://github.com/Arsenije95/phasor_diagram/blob/5ff5697dad4c6968a245d9a59c98cc070c248eb1/assets/example_1.jpg&#41;)
+
+[//]: # (![Phasor diagram example 1]&#40;https://github.com/Arsenije95/phasor_diagram/blob/5ff5697dad4c6968a245d9a59c98cc070c248eb1/assets/example_2.jpg&#41;)
 
 ## Getting started
 
