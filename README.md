@@ -14,10 +14,10 @@ depicted as a line with an arrow at one end.
 * Voltage vectors are represented in blue, while current vectors are represented in red.
 
 <p>
-  <img src="https://github.com/Arsenije95/phasor_diagram/blob/5ff5697dad4c6968a245d9a59c98cc070c248eb1/assets/example_2.jpg"
+  <img src="https://github.com/Arsenije95/phasor_diagram/raw/5ff5697dad4c6968a245d9a59c98cc070c248eb1/assets/example_2.jpg"
     alt="Phasor diagram, image of the first example." height="400"/>
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://github.com/Arsenije95/phasor_diagram/blob/5ff5697dad4c6968a245d9a59c98cc070c248eb1/assets/example_1.jpg"
+  <img src="https://github.com/Arsenije95/phasor_diagram/raw/5ff5697dad4c6968a245d9a59c98cc070c248eb1/assets/example_1.jpg"
    alt="Phasor diagram, image of the second example." height="400"/>
 </p>
 
