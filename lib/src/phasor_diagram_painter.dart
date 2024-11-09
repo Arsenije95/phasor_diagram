@@ -129,8 +129,8 @@ class PhasorDiagramPainter extends CustomPainter {
       maxRadius: radius,
     );
 
-    if(voltageMaxValue != 0.0) {
-      if(voltageValues[0] != 0.0) {
+    if (voltageMaxValue != 0.0) {
+      if (voltageValues[0] != 0.0) {
         /// Drawing phase 1 voltage vector
         drawVector(
           canvas: canvas,
@@ -145,7 +145,7 @@ class PhasorDiagramPainter extends CustomPainter {
         );
       }
 
-      if(voltageValues[1] != 0.0) {
+      if (voltageValues[1] != 0.0) {
         /// Drawing phase 2 voltage vector
         drawVector(
           canvas: canvas,
@@ -160,7 +160,7 @@ class PhasorDiagramPainter extends CustomPainter {
         );
       }
 
-      if(voltageValues[2] != 0.0) {
+      if (voltageValues[2] != 0.0) {
         /// Drawing phase 3 voltage vector
         drawVector(
           canvas: canvas,
@@ -176,8 +176,8 @@ class PhasorDiagramPainter extends CustomPainter {
       }
     }
 
-    if(currentMaxValue != 0.0) {
-      if(currentValues[0] != 0.0) {
+    if (currentMaxValue != 0.0) {
+      if (currentValues[0] != 0.0) {
         /// Drawing phase 1 current vector
         drawVector(
           canvas: canvas,
@@ -192,7 +192,7 @@ class PhasorDiagramPainter extends CustomPainter {
         );
       }
 
-      if(currentValues[1] != 0.0) {
+      if (currentValues[1] != 0.0) {
         /// Drawing phase 2 current vector
         drawVector(
           canvas: canvas,
@@ -207,7 +207,7 @@ class PhasorDiagramPainter extends CustomPainter {
         );
       }
 
-      if(currentValues[2] != 0.0) {
+      if (currentValues[2] != 0.0) {
         /// Drawing phase 3 current vector
         drawVector(
           canvas: canvas,
