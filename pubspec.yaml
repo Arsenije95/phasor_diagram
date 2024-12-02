@@ -4,7 +4,7 @@ description: "Flutter package that provides a customizable solution for visualiz
 repository: https://github.com/Arsenije95/phasor_diagram.git
 
 environment:
-  sdk: ">=3.4.3 <4.0.0"
+  sdk: ">=3.3.0 <4.0.0"
   flutter: "3.19.0"
 
 dependencies:
