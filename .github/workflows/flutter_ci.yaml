@@ -24,4 +24,12 @@ jobs:
 
       - run: flutter pub get
 
-      - run: flutter test
+      - run: sudo apt-get install -y fonts-dejavu-core fonts-liberation fonts-noto
+      - run: sudo apt-get install -y xvfb
+      - run: xvfb-run -- flutter test
+
+      - name: Upload failure artifacts
+       uses: actions/upload-artifact@v3
+       with:
+         name: golden-test-failures
+         path: test/failures
