@@ -30,7 +30,7 @@ jobs:
 
       # Run the Flutter tests with Alchemist and verbose output
       - name: Run Flutter tests with Alchemist and verbose output
-        run: flutter test --update-goldens -v > test_results.log
+        run: flutter test -v > test_results.log
 
       # Upload the test results log as an artifact for debugging
       - name: Upload test logs
@@ -41,7 +41,7 @@ jobs:
 
       # Optionally, upload the golden images folder (if required for debugging)
       - name: Upload golden images
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: golden-test-images
           path: test/goldens/
