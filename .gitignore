@@ -27,3 +27,8 @@ migrate_working_dir/
 **/doc/api/
 .dart_tool/
 build/
+
+# Ignore non-CI golden files and failures
+test/**/goldens/**/*.*
+test/**/failures/**/*.*
+!test/**/goldens/ci/*.*

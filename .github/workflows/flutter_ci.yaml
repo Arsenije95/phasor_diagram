@@ -26,21 +26,4 @@ jobs:
 
       - run: flutter pub get
 
-        # Run the Flutter tests and update golden files with verbose output
-      - name: Run Flutter tests with verbose output and update goldens
-        run: flutter test --update-goldens -v > test_results.log
-
-        # Upload the test results log as an artifact for debugging
-      - name: Upload test logs
-        uses: actions/upload-artifact@v3
-        with:
-          name: golden-test-logs
-          path: test_results.log
-
-        # Optionally, upload the goldens folder (if required for debugging)
-      - name: Upload golden images
-        uses: actions/upload-artifact@v3
-        with:
-          name: golden-test-images
-          path: test/_goldens/
-#      - run: flutter test -v
+      - run: flutter test -v
