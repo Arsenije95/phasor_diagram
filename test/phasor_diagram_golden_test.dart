@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:alchemist/alchemist.dart';
 
@@ -13,10 +12,6 @@ void main() {
       builder: () => GoldenTestGroup(
         children: [
           GoldenTestScenario(
-            constraints: const BoxConstraints(
-              maxWidth: 400.0,
-              maxHeight: 400.0,
-            ),
             name: 'The most common values.',
             child: const PhasorDiagram(
               size: 200.0,
@@ -35,10 +30,6 @@ void main() {
             ),
           ),
           GoldenTestScenario(
-            constraints: const BoxConstraints(
-              maxWidth: 400.0,
-              maxHeight: 400.0,
-            ),
             name: 'phaseOneVoltageValue is zero.',
             child: const PhasorDiagram(
               size: 200.0,
@@ -57,10 +48,6 @@ void main() {
             ),
           ),
           GoldenTestScenario(
-            constraints: const BoxConstraints(
-              maxWidth: 400.0,
-              maxHeight: 400.0,
-            ),
             name: 'phaseOneVoltageValue is drastically different from other '
                 'phases values.',
             child: const PhasorDiagram(
@@ -80,10 +67,6 @@ void main() {
             ),
           ),
           GoldenTestScenario(
-            constraints: const BoxConstraints(
-              maxWidth: 400.0,
-              maxHeight: 400.0,
-            ),
             name: 'Voltage values of all three phases are different.',
             child: const PhasorDiagram(
               size: 200.0,
@@ -102,10 +85,6 @@ void main() {
             ),
           ),
           GoldenTestScenario(
-            constraints: const BoxConstraints(
-              maxWidth: 400.0,
-              maxHeight: 400.0,
-            ),
             name: 'phaseOneCurrentValue is zero.',
             child: const PhasorDiagram(
               size: 200.0,
@@ -124,10 +103,6 @@ void main() {
             ),
           ),
           GoldenTestScenario(
-            constraints: const BoxConstraints(
-              maxWidth: 400.0,
-              maxHeight: 400.0,
-            ),
             name: '''phaseOneCurrentValue is drastically different from other 
                 phases values.''',
             child: const PhasorDiagram(
@@ -147,10 +122,6 @@ void main() {
             ),
           ),
           GoldenTestScenario(
-            constraints: const BoxConstraints(
-              maxWidth: 400.0,
-              maxHeight: 400.0,
-            ),
             name: 'Current values of all three phases are different.',
             child: const PhasorDiagram(
               size: 200.0,
@@ -169,10 +140,6 @@ void main() {
             ),
           ),
           GoldenTestScenario(
-            constraints: const BoxConstraints(
-              maxWidth: 400.0,
-              maxHeight: 400.0,
-            ),
             name: 'All the values are zero.',
             child: const PhasorDiagram(
               size: 200.0,
@@ -191,10 +158,6 @@ void main() {
             ),
           ),
           GoldenTestScenario(
-            constraints: const BoxConstraints(
-              maxWidth: 400.0,
-              maxHeight: 400.0,
-            ),
             name: 'All the angles are zero.',
             child: const PhasorDiagram(
               size: 200.0,
