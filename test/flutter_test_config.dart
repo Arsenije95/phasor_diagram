@@ -1,13 +1,17 @@
 import 'dart:async';
 
-import 'package:flutter/foundation.dart';
-import 'package:flutter_test/flutter_test.dart';
+import 'package:alchemist/alchemist.dart';
 
 Future<void> testExecutable(FutureOr<void> Function() testMain) async {
-  TestWidgetsFlutterBinding.ensureInitialized();
+  // ignore: do_not_use_environment
+  const isRunningInCi = bool.fromEnvironment('CI', defaultValue: false);
 
-  // Ensure consistent platform during CI
-  debugDefaultTargetPlatformOverride = TargetPlatform.linux;
-
-  return testMain();
+  return AlchemistConfig.runWithConfig(
+    config: const AlchemistConfig(
+      platformGoldensConfig: PlatformGoldensConfig(
+        enabled: !isRunningInCi,
+      ),
+    ),
+    run: testMain,
+  );
 }
