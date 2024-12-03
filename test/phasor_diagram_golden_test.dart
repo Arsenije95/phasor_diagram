@@ -8,6 +8,7 @@ void main() {
   group('PhasorDiagram Golden Tests', () {
     goldenTest(
       'renders correctly',
+      // tags: ['golden'],
       fileName: 'phasor_diagram',
       builder: () => GoldenTestGroup(
         children: [
