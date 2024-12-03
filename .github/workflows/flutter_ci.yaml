@@ -23,10 +23,6 @@ jobs:
           channel: stable
           flutter-version-file: pubspec.yaml
 
-      - run: flutter --version
-
-      - run: flutter doctor -v
-
       - run: flutter pub get
 
-      - run: flutter test -v
+      - run: flutter test
