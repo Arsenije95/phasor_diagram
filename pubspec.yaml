@@ -1,12 +1,12 @@
 name: phasor_diagram
-version: 0.0.1+5
+version: 0.0.1+6
 description: "Flutter package that provides a customizable solution for visualizing phasor diagrams in a three-phase electrical system"
 repository: https://github.com/Arsenije95/phasor_diagram
 issue_tracker: https://github.com/Arsenije95/phasor_diagram/issues
 
 environment:
   sdk: ">=3.3.0 <4.0.0"
-  flutter: ">=3.22.2"
+  flutter: "3.22.2"
 
 dependencies:
   flutter:

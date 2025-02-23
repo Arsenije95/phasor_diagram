@@ -1,3 +1,7 @@
+## 0.0.1+6
+
+* Change Flutter version to the previous one.
+
 ## 0.0.1+5
 
 * Added correct repository and issues links.
